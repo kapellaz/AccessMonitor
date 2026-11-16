@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatório de Acessibilidade - www.cm-sernancelhe.pt</title>
+  <style>
+    :root {
+      --primary: #0066cc;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --border: #e2e8f0;
+      --success: #16a34a;
+      --warning: #ca8a04;
+      --danger: #dc2626;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 30px 20px;
+    }
+    .container {
+      max-width: 1250px;
+      margin: 0 auto;
+    }
+    header {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 24px 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 24px;
+      color: #0f172a;
+    }
+    p.subtitle {
+      margin: 0;
+      color: #64748b;
+      font-size: 14px;
+    }
+    .stats-card {
+      display: flex;
+      gap: 16px;
+    }
+    .stat-box {
+      background: #f1f5f9;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .stat-box .num {
+      font-size: 26px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .stat-box .label {
+      font-size: 12px;
+      color: #64748b;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .score-high { background: #dcfce7; color: #15803d; }
+    .score-medium { background: #fef9c3; color: #a16207; }
+    .score-low { background: #fee2e2; color: #b91c1c; }
+    .score-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .table-container {
+      background: var(--card-bg);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .controls {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    input#search {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 14px;
+      width: 320px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 14px;
+    }
+    th {
+      background: #f8fafc;
+      padding: 12px 16px;
+      font-weight: 600;
+      color: #475569;
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:hover td {
+      background: #f8fafc;
+    }
+    .text-center { text-align: center; }
+    .font-bold { font-weight: 600; }
+    .text-danger { color: var(--danger); }
+    .text-warning { color: var(--warning); }
+    .text-success { color: var(--success); }
+    .page-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .page-link:hover { text-decoration: underline; }
+    .url-sub {
+      color: #94a3b8;
+      font-size: 12px;
+      word-break: break-all;
+    }
+    .error-list {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 12px;
+      color: #475569;
+    }
+    .error-list li { margin-bottom: 4px; }
+    .badge-error {
+      background: #fee2e2;
+      color: #b91c1c;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .status-badge {
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .status-live { background: #e0f2fe; color: #0369a1; }
+    .status-done { background: #dcfce7; color: #15803d; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Relatório de Acessibilidade Web (WCAG 2.1)</h1>
+        <p class="subtitle">
+          Município: <strong>www.cm-sernancelhe.pt</strong> | 
+          Status: <span class="status-badge status-live">⏳ Em Avaliação...</span> | 
+          Última atualização: 15:51:36
+        </p>
+      </div>
+      <div class="stats-card">
+        <div class="stat-box">
+          <div class="num">68</div>
+          <div class="label">Páginas Analisadas</div>
+        </div>
+        <div class="stat-box">
+          <div class="num text-success">9.5</div>
+          <div class="label">Média Global</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="table-container">
+      <div class="controls">
+        <input type="text" id="search" placeholder="Filtrar por título ou endereço URL..." onkeyup="filterTable()">
+        <small style="color: #64748b;">Apresentado por ordem de urgência (menor pontuação primeiro)</small>
+      </div>
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th width="40">#</th>
+            <th>Página</th>
+            <th width="100" class="text-center">Pontuação</th>
+            <th width="80" class="text-center">Erros</th>
+            <th width="80" class="text-center">Avisos</th>
+            <th width="80" class="text-center">Aprovados</th>
+            <th>Principais Não-Conformidades Detetadas</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+      <tr>
+        <td>1</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/participar/comunicar-ocorrencias" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/participar/comunicar-ocorrencias">
+            Comunicar Ocorrências
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/participar/comunicar-ocorrencias</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.1</span></td>
+        <td class="text-center text-danger font-bold">21</td>
+        <td class="text-center text-warning font-bold">9</td>
+        <td class="text-center text-success font-bold">355</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The form field has incorrect positioned label.</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/balcao-virtual/pedidos-e-comunicacoes" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/balcao-virtual/pedidos-e-comunicacoes">
+            Pedidos e Comunicações
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/balcao-virtual/pedidos-e-comunicacoes</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.1</span></td>
+        <td class="text-center text-danger font-bold">21</td>
+        <td class="text-center text-warning font-bold">9</td>
+        <td class="text-center text-success font-bold">342</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The form field has incorrect positioned label.</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/governo-declara-situacao-de-alerta-para-amanha-11-de-novembro-em-todo-o-pais-devido-as-tempestades-o-municipio-de-sernancelhe-encerra-escolas-e-servicos-nao-essenciais-e-coloca-a-protecao-civil-em-alerta-e-prontidao" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/governo-declara-situacao-de-alerta-para-amanha-11-de-novembro-em-todo-o-pais-devido-as-tempestades-o-municipio-de-sernancelhe-encerra-escolas-e-servicos-nao-essenciais-e-coloca-a-protecao-civil-em-alerta-e-prontidao">
+            GOVERNO DECLARA SITUAÇÃO DE ALERTA PARA AMANHÃ, 11 D...
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/governo-declara-situacao-de-alerta-para-amanha-11-de-novembro-em-todo-o-pais-devido-as-tempestades-o-municipio-de-sernancelhe-encerra-escolas-e-servicos-nao-essenciais-e-coloca-a-protecao-civil-em-alerta-e-prontidao</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.1</span></td>
+        <td class="text-center text-danger font-bold">21</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">440</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li><li>The page title has 100 or more characters.</li><li>`br` elements are being be used as a list.</li></ul></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/newsletters-65" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/newsletters-65">
+            Newsletters
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/newsletters-65</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.1</span></td>
+        <td class="text-center text-danger font-bold">19</td>
+        <td class="text-center text-warning font-bold">9</td>
+        <td class="text-center text-success font-bold">314</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The form field has incorrect positioned label.</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/pages/721" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/pages/721">
+            Política de Cookies
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/pages/721</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">38</td>
+        <td class="text-center text-warning font-bold">17</td>
+        <td class="text-center text-success font-bold">334</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>This test target has a text-align css property not equal to justify.</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio/contactos" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio/contactos">
+            Contactos
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio/contactos</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">9</td>
+        <td class="text-center text-success font-bold">321</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/acao-social" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/acao-social">
+            Ação Social
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/acao-social</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">9</td>
+        <td class="text-center text-success font-bold">486</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio">
+            Município
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">348</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio/camara-municipal" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio/camara-municipal">
+            Câmara Municipal
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio/camara-municipal</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">387</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio/assembleia-municipal" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio/assembleia-municipal">
+            Assembleia Municipal
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio/assembleia-municipal</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">354</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio/juntas-de-freguesia" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio/juntas-de-freguesia">
+            Juntas de Freguesia
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio/juntas-de-freguesia</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">23</td>
+        <td class="text-center text-success font-bold">402</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio/orgaos-de-consulta" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio/orgaos-de-consulta">
+            Órgãos de Consulta
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio/orgaos-de-consulta</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">13</td>
+        <td class="text-center text-success font-bold">312</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio/gestao-e-transparencia" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio/gestao-e-transparencia">
+            Gestão e Transparência
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio/gestao-e-transparencia</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">323</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio/projetos-cofinanciados" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio/projetos-cofinanciados">
+            Projetos cofinanciados
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio/projetos-cofinanciados</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">315</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio/arquivo-documental" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio/arquivo-documental">
+            Arquivo Documental
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio/arquivo-documental</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">10</td>
+        <td class="text-center text-success font-bold">336</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/municipio/geminacoes" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/municipio/geminacoes">
+            Geminações
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/municipio/geminacoes</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">9</td>
+        <td class="text-center text-success font-bold">319</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver">
+            Viver
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">446</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/o-concelho" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/o-concelho">
+            O Concelho
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/o-concelho</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">421</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao">
+            Comunicação
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">428</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/educacao" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/educacao">
+            Educação
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/educacao</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">459</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>21</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/ambiente-sustentabilidade-e-bem-estar-animal" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/ambiente-sustentabilidade-e-bem-estar-animal">
+            Ambiente Sustentabilidade e Bem-Estar animal
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/ambiente-sustentabilidade-e-bem-estar-animal</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">471</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/urbanismo-e-territorio" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/urbanismo-e-territorio">
+            Urbanismo e Território
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/urbanismo-e-territorio</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">450</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>23</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/contratacao-publica" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/contratacao-publica">
+            Contratação Pública
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/contratacao-publica</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">406</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>24</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/protecao-civil-e-floresta" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/protecao-civil-e-floresta">
+            Proteção Civil e Floresta
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/protecao-civil-e-floresta</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">435</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>25</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/economia-empreendedorismo" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/economia-empreendedorismo">
+            Economia / Empreendedorismo
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/economia-empreendedorismo</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">443</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar">
+            Visitar
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">9</td>
+        <td class="text-center text-success font-bold">327</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/concelho" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/concelho">
+            Concelho
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/concelho</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">453</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/patrimonio" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/patrimonio">
+            Património
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/patrimonio</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">340</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/cultura" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/cultura">
+            Cultura
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/cultura</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">354</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>30</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/desporto" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/desporto">
+            Desporto
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/desporto</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">332</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/participar" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/participar">
+            Participar
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/participar</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">267</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/participar/associativismo" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/participar/associativismo">
+            Associativismo
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/participar/associativismo</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">10</td>
+        <td class="text-center text-success font-bold">271</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>33</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/participar/canal-de-denuncias" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/participar/canal-de-denuncias">
+            Canal de Denúncias
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/participar/canal-de-denuncias</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">259</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>34</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/balcao-virtual/apoio-ao-municipe/documentacao/documentos-em-consulta-publica" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/balcao-virtual/apoio-ao-municipe/documentacao/documentos-em-consulta-publica">
+            Documentos em Consulta Pública
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/balcao-virtual/apoio-ao-municipe/documentacao/documentos-em-consulta-publica</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">324</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>35</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/balcao-virtual" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/balcao-virtual">
+            Balcão Virtual
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/balcao-virtual</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">277</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>36</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/balcao-virtual/apoio-ao-municipe" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/balcao-virtual/apoio-ao-municipe">
+            Apoio ao Munícipe
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/balcao-virtual/apoio-ao-municipe</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">282</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>37</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/balcao-virtual/links-uteis" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/balcao-virtual/links-uteis">
+            Links Úteis
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/balcao-virtual/links-uteis</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">272</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>38</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/santuario-da-lapa-acolhe-iniciativa-que-junta-vinhos-gastronomia-cultura-e-patrimonio" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/santuario-da-lapa-acolhe-iniciativa-que-junta-vinhos-gastronomia-cultura-e-patrimonio">
+            SANTUÁRIO DA LAPA ACOLHE INICIATIVA QUE JUNTA VINHOS...
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/santuario-da-lapa-acolhe-iniciativa-que-junta-vinhos-gastronomia-cultura-e-patrimonio</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">575</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>39</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/terra-da-castanha-em-destaque-na-primeira-prova-de-natacao" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/terra-da-castanha-em-destaque-na-primeira-prova-de-natacao">
+            TERRA DA CASTANHA EM DESTAQUE NA PRIMEIRA PROVA DE N...
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/terra-da-castanha-em-destaque-na-primeira-prova-de-natacao</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">535</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>40</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/municipios-de-sernancelhe-moimenta-da-beira-e-tabuaco-reuniram-com-a-apa-para-reafirmarem-a-posicao-de-rejeicao-a-colocacao-de-paineis-fotovoltaicos-no-rio-tavora" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/municipios-de-sernancelhe-moimenta-da-beira-e-tabuaco-reuniram-com-a-apa-para-reafirmarem-a-posicao-de-rejeicao-a-colocacao-de-paineis-fotovoltaicos-no-rio-tavora">
+            MUNICÍPIOS DE SERNANCELHE, MOIMENTA DA BEIRA E TABUA...
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/municipios-de-sernancelhe-moimenta-da-beira-e-tabuaco-reuniram-com-a-apa-para-reafirmarem-a-posicao-de-rejeicao-a-colocacao-de-paineis-fotovoltaicos-no-rio-tavora</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">19</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">410</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li><li>The page title has 100 or more characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>41</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/sernancelhe-celebrou-o-sao-martinho-com-tradicao-alegria-e-espirito-de-comunidade" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/sernancelhe-celebrou-o-sao-martinho-com-tradicao-alegria-e-espirito-de-comunidade">
+            SERNANCELHE CELEBROU O SÃO MARTINHO COM TRADIÇÃO, AL...
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/sernancelhe-celebrou-o-sao-martinho-com-tradicao-alegria-e-espirito-de-comunidade</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">575</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/ministra-da-cultura-juventude-e-desporto-apresenta-revista-literaria-aquilino-e-inaugura-requalificacao-do-auditorio-municipal-de-sernancelhe" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/ministra-da-cultura-juventude-e-desporto-apresenta-revista-literaria-aquilino-e-inaugura-requalificacao-do-auditorio-municipal-de-sernancelhe">
+            MINISTRA DA CULTURA, JUVENTUDE E DESPORTO APRESENTA ...
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/ministra-da-cultura-juventude-e-desporto-apresenta-revista-literaria-aquilino-e-inaugura-requalificacao-do-auditorio-municipal-de-sernancelhe</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">19</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">440</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li><li>The page title has 100 or more characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>43</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/noticias">
+            Notícias
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/noticias</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">46</td>
+        <td class="text-center text-success font-bold">596</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>44</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/boletim-municipal" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/boletim-municipal">
+            Boletim Municipal
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/boletim-municipal</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">443</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>45</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/cerimonia-de-apresentacao-da-revista-aquilino-n-7" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/cerimonia-de-apresentacao-da-revista-aquilino-n-7">
+            CERIMÓNIA DE APRESENTAÇÃO DA REVISTA AQUILINO Nº 7
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/cerimonia-de-apresentacao-da-revista-aquilino-n-7</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">423</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>46</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/sernancelhe-natal-25" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/sernancelhe-natal-25">
+            SERNANCELHE NATAL
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/sernancelhe-natal-25</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">423</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>47</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/natal-sem-idade" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/natal-sem-idade">
+            NATAL SEM IDADE
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/natal-sem-idade</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">423</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>48</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/dadiva-de-recolha-de-sangue-vila-da-ponte" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/dadiva-de-recolha-de-sangue-vila-da-ponte">
+            DÁDIVA DE RECOLHA DE SANGUE VILA DA PONTE
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/dadiva-de-recolha-de-sangue-vila-da-ponte</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">423</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>49</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/cantares-das-janeiras" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/cantares-das-janeiras">
+            CANTARES DAS JANEIRAS
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/cantares-das-janeiras</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">423</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>50</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/cultura/eventos" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/cultura/eventos">
+            Atividades
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/cultura/eventos</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">18</td>
+        <td class="text-center text-success font-bold">467</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>51</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/biblioteca-municipal" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/biblioteca-municipal">
+            Biblioteca Municipal
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/cultura/espacos/biblioteca-municipal</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">11</td>
+        <td class="text-center text-success font-bold">408</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>52</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/loja-interativa-de-turismo" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/loja-interativa-de-turismo">
+            Loja Interativa de Turismo
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/cultura/espacos/loja-interativa-de-turismo</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">361</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>53</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/casa-das-novenas" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/casa-das-novenas">
+            Casa das Novenas
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/cultura/espacos/casa-das-novenas</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">359</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>54</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/galeria" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/galeria">
+            Espaço da Castanha e do Castanheiro
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/cultura/espacos/galeria</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">467</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>55</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/centro-de-artes" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/cultura/espacos/centro-de-artes">
+            Centro de Artes
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/cultura/espacos/centro-de-artes</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">367</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>56</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/educacao/rede-escolar" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/educacao/rede-escolar">
+            Rede Escolar
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/educacao/rede-escolar</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">12</td>
+        <td class="text-center text-success font-bold">457</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>57</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/cultura/centros-interpretativos-56" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/cultura/centros-interpretativos-56">
+            Centros Interpretativos
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/cultura/centros-interpretativos-56</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">14</td>
+        <td class="text-center text-success font-bold">359</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>58</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/cultura/museus" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/cultura/museus">
+            Museus
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/cultura/museus</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">14</td>
+        <td class="text-center text-success font-bold">364</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>59</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-arqueologico" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-arqueologico">
+            Património Arqueológico
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-arqueologico</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">46</td>
+        <td class="text-center text-success font-bold">488</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-arquitetonico" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-arquitetonico">
+            Património Arquitetónico
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-arquitetonico</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">110</td>
+        <td class="text-center text-success font-bold">854</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>61</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-cultural" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-cultural">
+            Património Cultural
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-cultural</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">22</td>
+        <td class="text-center text-success font-bold">384</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>62</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-natural" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-natural">
+            Património Natural
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-natural</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">36</td>
+        <td class="text-center text-success font-bold">437</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>63</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/acao-social/integracao-e-emprego/centro-local-de-apoio-a-integracao-de-migrantes" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/acao-social/integracao-e-emprego/centro-local-de-apoio-a-integracao-de-migrantes">
+            Centro Local de Apoio à Integração de Migrantes
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/acao-social/integracao-e-emprego/centro-local-de-apoio-a-integracao-de-migrantes</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">8</td>
+        <td class="text-center text-success font-bold">454</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>64</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/acao-social/radar-social" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/acao-social/radar-social">
+            Radar Social
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/acao-social/radar-social</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">12</td>
+        <td class="text-center text-success font-bold">514</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>65</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/acao-social/rede-social" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/acao-social/rede-social">
+            Rede Social
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/acao-social/rede-social</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.5</span></td>
+        <td class="text-center text-danger font-bold">18</td>
+        <td class="text-center text-warning font-bold">9</td>
+        <td class="text-center text-success font-bold">471</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>66</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt">
+            Município de Sernancelhe
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.7</span></td>
+        <td class="text-center text-danger font-bold">13</td>
+        <td class="text-center text-warning font-bold">78</td>
+        <td class="text-center text-success font-bold">648</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>67</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/1" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/1">
+            Município de Sernancelhe
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/1</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">9.7</span></td>
+        <td class="text-center text-danger font-bold">13</td>
+        <td class="text-center text-warning font-bold">78</td>
+        <td class="text-center text-success font-bold">648</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li><li>The element contains a title attribute equal to the text in the link</li><li>The img alt text attribute has more than 100 characters.</li></ul></td>
+      </tr>
+      <tr>
+        <td>68</td>
+        <td>
+          <a href="https://www.cm-sernancelhe.pt/viver/acao-social/conselho-local-de-acao-social" target="_blank" rel="noopener" class="page-link" title="https://www.cm-sernancelhe.pt/viver/acao-social/conselho-local-de-acao-social">
+            Página Não Encontrada
+          </a>
+          <br><small class="url-sub">https://www.cm-sernancelhe.pt/viver/acao-social/conselho-local-de-acao-social</small>
+        </td>
+        <td class="text-center"><span class="score-badge score-high">10.0</span></td>
+        <td class="text-center text-danger font-bold">2</td>
+        <td class="text-center text-warning font-bold">4</td>
+        <td class="text-center text-success font-bold">15</td>
+        <td class="issues-col"><ul class="error-list"><li>Element has contrast ratio lower than minimum.</li></ul></td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function filterTable() {
+      const input = document.getElementById('search');
+      const filter = input.value.toLowerCase();
+      const table = document.getElementById('resultsTable');
+      const tr = table.getElementsByTagName('tr');
+
+      for (let i = 1; i < tr.length; i++) {
+        const text = tr[i].textContent || tr[i].innerText;
+        tr[i].style.display = text.toLowerCase().indexOf(filter) > -1 ? '' : 'none';
+      }
+    }
+  </script>
+</body>
+</html>

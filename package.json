@@ -1,0 +1,11 @@
+{
+  "name": "access-monitor-workspace",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix AccessMonitor-3.0.5 start",
+    "start:noenv": "npm --prefix AccessMonitor-3.0.5 run start:noenv",
+    "build": "npm --prefix AccessMonitor-3.0.5 run build:noenv",
+    "test": "npm --prefix AccessMonitor-3.0.5 test",
+    "avaliar": "node avaliar-site.js"
+  }
+}

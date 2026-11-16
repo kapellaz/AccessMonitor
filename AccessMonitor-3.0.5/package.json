@@ -1,0 +1,55 @@
+{
+  "name": "acess-monitor-plus",
+  "version": "1.1.1",
+  "private": true,
+  "dependencies": {
+    "@a12e/accessmonitor-rulesets": "1.0.4",
+    "ama-design-system": "^1.1.88",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "classnames": "^2.5.1",
+    "file-saver": "^2.0.5",
+    "i18next": "^23.10.1",
+    "lz-string": "^1.5.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.0",
+    "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": " env-cmd -f .env.dev react-scripts start",
+    "start:noenv": "react-scripts start",
+    "build:preprod": "env-cmd -f .env.preprod react-scripts build",
+    "build:prod": "env-cmd -f .env.prod react-scripts build",
+    "build:noenv": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.23.3",
+    "env-cmd": "^11.0.0",
+    "prop-types": "^15.8.1",
+    "webpack": "^5.90.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

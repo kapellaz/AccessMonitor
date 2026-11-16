@@ -1,0 +1,1028 @@
+[
+  {
+    "url": "https://www.cm-sernancelhe.pt",
+    "success": true,
+    "title": "Município de Sernancelhe",
+    "score": 9.7,
+    "conform": "1@0@0",
+    "passed": 648,
+    "failed": 13,
+    "warning": 78,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/pages/721",
+    "success": true,
+    "title": "Política de Cookies",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 334,
+    "failed": 38,
+    "warning": 17,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "This test target has a text-align css property not equal to justify.",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio/contactos",
+    "success": true,
+    "title": "Contactos",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 321,
+    "failed": 18,
+    "warning": 9,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/acao-social",
+    "success": true,
+    "title": "Ação Social",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 486,
+    "failed": 18,
+    "warning": 9,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio",
+    "success": true,
+    "title": "Município",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 348,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio/camara-municipal",
+    "success": true,
+    "title": "Câmara Municipal",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 387,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio/assembleia-municipal",
+    "success": true,
+    "title": "Assembleia Municipal",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 354,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio/juntas-de-freguesia",
+    "success": true,
+    "title": "Juntas de Freguesia",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 402,
+    "failed": 18,
+    "warning": 23,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio/orgaos-de-consulta",
+    "success": true,
+    "title": "Órgãos de Consulta",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 312,
+    "failed": 18,
+    "warning": 13,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio/gestao-e-transparencia",
+    "success": true,
+    "title": "Gestão e Transparência",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 323,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio/projetos-cofinanciados",
+    "success": true,
+    "title": "Projetos cofinanciados",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 315,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio/arquivo-documental",
+    "success": true,
+    "title": "Arquivo Documental",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 336,
+    "failed": 18,
+    "warning": 10,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/municipio/geminacoes",
+    "success": true,
+    "title": "Geminações",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 319,
+    "failed": 18,
+    "warning": 9,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver",
+    "success": true,
+    "title": "Viver",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 446,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/o-concelho",
+    "success": true,
+    "title": "O Concelho",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 421,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao",
+    "success": true,
+    "title": "Comunicação",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 428,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/educacao",
+    "success": true,
+    "title": "Educação",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 459,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/ambiente-sustentabilidade-e-bem-estar-animal",
+    "success": true,
+    "title": "Ambiente Sustentabilidade e Bem-Estar animal",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 471,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/urbanismo-e-territorio",
+    "success": true,
+    "title": "Urbanismo e Território",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 450,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/contratacao-publica",
+    "success": true,
+    "title": "Contratação Pública",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 406,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/protecao-civil-e-floresta",
+    "success": true,
+    "title": "Proteção Civil e Floresta",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 435,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/economia-empreendedorismo",
+    "success": true,
+    "title": "Economia / Empreendedorismo",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 443,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar",
+    "success": true,
+    "title": "Visitar",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 327,
+    "failed": 18,
+    "warning": 9,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/concelho",
+    "success": true,
+    "title": "Concelho",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 453,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/patrimonio",
+    "success": true,
+    "title": "Património",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 340,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/cultura",
+    "success": true,
+    "title": "Cultura",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 354,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/desporto",
+    "success": true,
+    "title": "Desporto",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 332,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/participar",
+    "success": true,
+    "title": "Participar",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 267,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/participar/associativismo",
+    "success": true,
+    "title": "Associativismo",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 271,
+    "failed": 18,
+    "warning": 10,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/participar/canal-de-denuncias",
+    "success": true,
+    "title": "Canal de Denúncias",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 259,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/participar/comunicar-ocorrencias",
+    "success": true,
+    "title": "Comunicar Ocorrências",
+    "score": 9.1,
+    "conform": "2@1@0",
+    "passed": 355,
+    "failed": 21,
+    "warning": 9,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The form field has incorrect positioned label.",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/balcao-virtual/apoio-ao-municipe/documentacao/documentos-em-consulta-publica",
+    "success": true,
+    "title": "Documentos em Consulta Pública",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 324,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/balcao-virtual",
+    "success": true,
+    "title": "Balcão Virtual",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 277,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/balcao-virtual/apoio-ao-municipe",
+    "success": true,
+    "title": "Apoio ao Munícipe",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 282,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/balcao-virtual/links-uteis",
+    "success": true,
+    "title": "Links Úteis",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 272,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/balcao-virtual/pedidos-e-comunicacoes",
+    "success": true,
+    "title": "Pedidos e Comunicações",
+    "score": 9.1,
+    "conform": "2@1@0",
+    "passed": 342,
+    "failed": 21,
+    "warning": 9,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The form field has incorrect positioned label.",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/santuario-da-lapa-acolhe-iniciativa-que-junta-vinhos-gastronomia-cultura-e-patrimonio",
+    "success": true,
+    "title": "SANTUÁRIO DA LAPA ACOLHE INICIATIVA QUE JUNTA VINHOS, GASTRONOMIA, CULTURA E PATRIMÓNIO",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 575,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/terra-da-castanha-em-destaque-na-primeira-prova-de-natacao",
+    "success": true,
+    "title": "TERRA DA CASTANHA EM DESTAQUE NA PRIMEIRA PROVA DE NATAÇÃO",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 535,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/municipios-de-sernancelhe-moimenta-da-beira-e-tabuaco-reuniram-com-a-apa-para-reafirmarem-a-posicao-de-rejeicao-a-colocacao-de-paineis-fotovoltaicos-no-rio-tavora",
+    "success": true,
+    "title": "MUNICÍPIOS DE SERNANCELHE, MOIMENTA DA BEIRA E TABUAÇO REUNIRAM COM A APA PARA REAFIRMAREM A POSIÇÃO DE REJEIÇÃO À COLOCAÇÃO DE PAINÉIS FOTOVOLTAICOS NO RIO TÁVORA",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 410,
+    "failed": 19,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters.",
+      "The page title has 100 or more characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/sernancelhe-celebrou-o-sao-martinho-com-tradicao-alegria-e-espirito-de-comunidade",
+    "success": true,
+    "title": "SERNANCELHE CELEBROU O SÃO MARTINHO COM TRADIÇÃO, ALEGRIA E ESPÍRITO DE COMUNIDADE",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 575,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/ministra-da-cultura-juventude-e-desporto-apresenta-revista-literaria-aquilino-e-inaugura-requalificacao-do-auditorio-municipal-de-sernancelhe",
+    "success": true,
+    "title": "MINISTRA DA CULTURA, JUVENTUDE E DESPORTO APRESENTA REVISTA LITERÁRIA “AQUILINO” E INAUGURA REQUALIFICAÇÃO DO AUDITÓRIO MUNICIPAL DE SERNANCELHE",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 440,
+    "failed": 19,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters.",
+      "The page title has 100 or more characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/noticias/noticia-97/governo-declara-situacao-de-alerta-para-amanha-11-de-novembro-em-todo-o-pais-devido-as-tempestades-o-municipio-de-sernancelhe-encerra-escolas-e-servicos-nao-essenciais-e-coloca-a-protecao-civil-em-alerta-e-prontidao",
+    "success": true,
+    "title": "GOVERNO DECLARA SITUAÇÃO DE ALERTA PARA AMANHÃ, 11 DE NOVEMBRO, EM TODO O PAÍS, DEVIDO ÀS TEMPESTADES. O MUNICÍPIO DE SERNANCELHE ENCERRA ESCOLAS E SERVIÇOS NÃO ESSENCIAIS E COLOCA A PROTEÇÃO CIVIL EM ALERTA E PRONTIDÃO.",
+    "score": 9.1,
+    "conform": "2@1@0",
+    "passed": 440,
+    "failed": 21,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters.",
+      "The page title has 100 or more characters.",
+      "`br` elements are being be used as a list."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/1",
+    "success": true,
+    "title": "Município de Sernancelhe",
+    "score": 9.7,
+    "conform": "1@0@0",
+    "passed": 648,
+    "failed": 13,
+    "warning": 78,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/noticias",
+    "success": true,
+    "title": "Notícias",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 596,
+    "failed": 18,
+    "warning": 46,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/newsletters-65",
+    "success": true,
+    "title": "Newsletters",
+    "score": 9.1,
+    "conform": "2@1@0",
+    "passed": 314,
+    "failed": 19,
+    "warning": 9,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The form field has incorrect positioned label.",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/boletim-municipal",
+    "success": true,
+    "title": "Boletim Municipal",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 443,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/cerimonia-de-apresentacao-da-revista-aquilino-n-7",
+    "success": true,
+    "title": "CERIMÓNIA DE APRESENTAÇÃO DA REVISTA AQUILINO Nº 7",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 423,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/sernancelhe-natal-25",
+    "success": true,
+    "title": "SERNANCELHE NATAL",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 423,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/natal-sem-idade",
+    "success": true,
+    "title": "NATAL SEM IDADE",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 423,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/dadiva-de-recolha-de-sangue-vila-da-ponte",
+    "success": true,
+    "title": "DÁDIVA DE RECOLHA DE SANGUE VILA DA PONTE",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 423,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/comunicacao/atividades/evento/cantares-das-janeiras",
+    "success": true,
+    "title": "CANTARES DAS JANEIRAS",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 423,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/cultura/eventos",
+    "success": true,
+    "title": "Atividades",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 467,
+    "failed": 18,
+    "warning": 18,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/cultura/espacos/biblioteca-municipal",
+    "success": true,
+    "title": "Biblioteca Municipal",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 408,
+    "failed": 18,
+    "warning": 11,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/cultura/espacos/loja-interativa-de-turismo",
+    "success": true,
+    "title": "Loja Interativa de Turismo",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 361,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/cultura/espacos/casa-das-novenas",
+    "success": true,
+    "title": "Casa das Novenas",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 359,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/cultura/espacos/galeria",
+    "success": true,
+    "title": "Espaço da Castanha e do Castanheiro",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 467,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/cultura/espacos/centro-de-artes",
+    "success": true,
+    "title": "Centro de Artes",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 367,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/educacao/rede-escolar",
+    "success": true,
+    "title": "Rede Escolar",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 457,
+    "failed": 18,
+    "warning": 12,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/cultura/centros-interpretativos-56",
+    "success": true,
+    "title": "Centros Interpretativos",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 359,
+    "failed": 18,
+    "warning": 14,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/cultura/museus",
+    "success": true,
+    "title": "Museus",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 364,
+    "failed": 18,
+    "warning": 14,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-arqueologico",
+    "success": true,
+    "title": "Património Arqueológico",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 488,
+    "failed": 18,
+    "warning": 46,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-arquitetonico",
+    "success": true,
+    "title": "Património Arquitetónico",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 854,
+    "failed": 18,
+    "warning": 110,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-cultural",
+    "success": true,
+    "title": "Património Cultural",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 384,
+    "failed": 18,
+    "warning": 22,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/visitar/patrimonio/patrimonio-natural",
+    "success": true,
+    "title": "Património Natural",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 437,
+    "failed": 18,
+    "warning": 36,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/acao-social/integracao-e-emprego/centro-local-de-apoio-a-integracao-de-migrantes",
+    "success": true,
+    "title": "Centro Local de Apoio à Integração de Migrantes",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 454,
+    "failed": 18,
+    "warning": 8,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/acao-social/conselho-local-de-acao-social",
+    "success": true,
+    "title": "Página Não Encontrada",
+    "score": 10,
+    "conform": "0@0@0",
+    "passed": 15,
+    "failed": 2,
+    "warning": 4,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/acao-social/radar-social",
+    "success": true,
+    "title": "Radar Social",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 514,
+    "failed": 18,
+    "warning": 12,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  },
+  {
+    "url": "https://www.cm-sernancelhe.pt/viver/acao-social/rede-social",
+    "success": true,
+    "title": "Rede Social",
+    "score": 9.5,
+    "conform": "1@1@0",
+    "passed": 471,
+    "failed": 18,
+    "warning": 9,
+    "errorsList": [
+      "Element has contrast ratio lower than minimum.",
+      "The element contains a title attribute equal to the text in the link",
+      "The img alt text attribute has more than 100 characters."
+    ]
+  }
+]

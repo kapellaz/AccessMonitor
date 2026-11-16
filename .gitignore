@@ -1,0 +1,23 @@
+# Node dependencies
+**/node_modules/
+node_modules/
+
+# Production build outputs
+**/build/
+**/dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+**/error-log/
+*.log
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary test scripts
+scripts/test-crawl.js
